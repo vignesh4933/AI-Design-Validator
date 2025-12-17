@@ -1,86 +1,76 @@
-AI Design Validator
-AI-powered cable design validation tool using OpenAI API and IEC standards.
+# IEC Design Validator
 
-Features
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
 
-Free text or JSON input for cable design specifications
+---
 
-AI-based validation against IEC 60502-1 and IEC 60228 standards
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation & Usage](#installation--usage)
+- [Project Structure](#project-structure)
+- [License](#license)
 
-Real-time confidence scoring
+---
 
-Detailed validation results with reasoning
+## Project Overview
+IEC Design Validator is an AI-powered cable design validation tool that checks cable specifications against IEC standards using the Gemini API. It automates cable compliance verification, helping engineers validate designs efficiently.
 
-Tech Stack
+---
 
-Frontend: Next.js, React, Material-UI, TypeScript
+## Features
+- Accepts free-text or JSON input for cable design specifications.  
+- Validates designs against IEC 60502-1 and IEC 60228 standards.  
+- Provides real-time confidence scoring.  
+- Displays detailed validation results with reasoning.  
 
-Backend: NestJS, OpenAI API, TypeScript
+---
 
-Setup
+## Tech Stack
+- **Frontend:** Next.js 15, React, Material-UI  
+- **Backend:** NestJS, Node.js  
+- **AI:** Gemini API (OpenAI API for design validation)  
 
-Prerequisites
+---
 
-Node.js 18+
+## Installation & Usage
+1. **Clone the repository:**  
+   ```bash
+   git clone https://github.com/vignesh4933/AI-Design-Validator.git
 
-OpenAI API key
 
-Installation
+Navigate to backend and frontend directories:
 
-Clone the repository:
-git clone https://github.com/vignesh4933/AI-Design-Validator.git
-cd AI-Design-Validator
+cd design-validator-backend
+cd ../design-validator-frontend
+
 
 Install dependencies:
 
-Backend:
-cd design-validator-backend
 npm install
 
-Frontend:
-cd ../design-validator-frontend
-npm install
 
-Configure environment variables:
-Create design-validator-backend/.env with:
-OPENAI_API_KEY=your_api_key_here
+Run backend server:
 
-Running the Application
-
-Backend (port 3000):
-cd design-validator-backend
 npm run start:dev
 
-Frontend (port 3001):
-cd design-validator-frontend
+
+Run frontend application:
+
 npm run dev
 
-Open http://localhost:3001
- in your browser.
 
-Usage
+Open the app in your browser and enter cable design specifications to see real-time validation results.
 
-Select input type (Free Text or JSON)
-
-Enter cable design specifications
-
-Click Validate Design
-
-View validation results and AI reasoning
-
-Example Input
-
-Free Text:
-Cable: 10 sqmm Cu conductor, PVC 1.0mm insulation, 0.6/1 kV
-
-JSON:
-
-{
-  "voltage": "0.6/1 kV",
-  "conductor": { "material": "Cu", "size": 10 },
-  "insulation": { "material": "PVC", "thickness": 1.0 }
-}
-
-
-License
-MIT
+Project Structure
+AI-Design-Validator/
+├─ backend/           # NestJS API server
+├─ frontend/          # Next.js 15 React frontend
+├─ services/          # AI validation services
+├─ components/        # Reusable UI components
+├─ README.md          # Project documentation
+└─ package.json       # Project dependencies

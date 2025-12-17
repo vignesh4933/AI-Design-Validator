@@ -7,107 +7,100 @@
 
 ---
 
-## Table of Contents
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Installation & Usage](#installation--usage)
-- [Project Structure](#project-structure)
-- [License](#license)
-
----
-
-## Project Overview
-IEC Design Validator is an AI-powered cable design validation tool that checks cable specifications against IEC standards using the Gemini API. It automates cable compliance verification, helping engineers validate designs efficiently.
-
----
+AI-powered cable design validation tool using Gemini API and IEC standards.
 
 ## Features
-- Accepts free-text or JSON input for cable design specifications.  
-- Validates designs against IEC 60502-1 and IEC 60228 standards.  
-- Provides real-time confidence scoring.  
-- Displays detailed validation results with reasoning.  
 
----
+- Free text or JSON input for cable design specifications
+- AI-based validation against IEC 60502-1 and IEC 60228 standards
+- Real-time confidence scoring
+- Detailed validation results with reasoning
 
 ## Tech Stack
-- **Frontend:** Next.js 15, React, Material-UI  
-- **Backend:** NestJS, Node.js  
-- **AI:** Gemini API (OpenAI API for design validation)  
 
----
+**Frontend:** Next.js 15, React, Material-UI, TypeScript  
+**Backend:** NestJS, Google Gemini AI, TypeScript
 
-## Installation & Usage
-1. **Clone the repository:**  
-   ```bash
-   git clone https://github.com/vignesh4933/AI-Design-Validator.git
+## Setup
 
+### Prerequisites
 
-2. **Install dependencies:**
+- Node.js 18+
+- Gemini API key ([Get one here](https://aistudio.google.com/app/apikey))
 
-**Backend**
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/POOVARASAN-03/IEC-Design-Validator.git
+cd IEC-Design-Validator
+```
+
+2. Install dependencies:
+
+```bash
+# Backend
 cd backend
 npm install
 
-markdown
-Copy code
-
-**Frontend**
+# Frontend
 cd ../frontend
 npm install
+```
 
-markdown
-Copy code
+3. Configure environment variables:
 
-3. Create environment file (`backend/.env`) and add:
+Create `backend/.env`:
+
+```
 GEMINI_API_KEY=your_api_key_here
+```
 
-csharp
-Copy code
+### Running the Application
 
-## Running the Application
+**Backend (port 3000):**
 
-**Backend (default port 3000):**
+```bash
 cd backend
 npm run start:dev
+```
 
-cpp
-Copy code
+**Frontend (port 3001):**
 
-**Frontend (default port 3001):**
+```bash
 cd frontend
 npm run dev
+```
 
-pgsql
-Copy code
-
-Open http://localhost:3001 in your browser.
+Open [http://localhost:3001](http://localhost:3001) in your browser.
 
 ## Usage
 
-1. Select input type (Free Text or JSON)  
-2. Enter cable design specifications  
-3. Click **Validate Design**  
+1. Select input type (Free Text or JSON)
+2. Enter cable design specifications
+3. Click "Validate Design"
 4. View validation results and AI reasoning
 
 ## Example Input
 
 **Free Text:**
-Cable: 10 sqmm Cu conductor, PVC 1.0mm insulation, 0.6/1 kV
 
-javascript
-Copy code
+```
+Cable: 10 sqmm Cu conductor, PVC 1.0mm insulation, 0.6/1 kV
+```
 
 **JSON:**
-{
-"voltage": "0.6/1 kV",
-"conductor": { "material": "Cu", "size": 10 },
-"insulation": { "material": "PVC", "thickness": 1.0 }
-}
 
-shell
-Copy code
+```json
+{
+  "voltage": "0.6/1 kV",
+  "conductor": { "material": "Cu", "size": 10 },
+  "insulation": { "material": "PVC", "thickness": 1.0 }
+}
+```
 
 ## License
 
+MIT
 MIT

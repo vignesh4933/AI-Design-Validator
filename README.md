@@ -1,4 +1,4 @@
-# IEC Design Validator
+# AI IEC Design Validator
 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
@@ -7,7 +7,7 @@
 
 ---
 
-AI-powered cable design validation tool using Gemini API and IEC standards.
+AI-powered cable design validation tool using OPENAI API and IEC standards.
 
 ## Features
 

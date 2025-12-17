@@ -19,7 +19,7 @@ AI-powered cable design validation tool using Gemini API and IEC standards.
 ## Tech Stack
 
 **Frontend:** Next.js 15, React, Material-UI, TypeScript  
-**Backend:** NestJS, Google Gemini AI, TypeScript
+**Backend:** NestJS, OpenAI API (ChatGPT), TypeScript
 
 ## Setup
 
@@ -54,26 +54,26 @@ npm install
 Create `backend/.env`:
 
 ```
-GEMINI_API_KEY=your_api_key_here
+OPENAI_API_KEY=your_api_key_here
 ```
 
 ### Running the Application
 
-**Backend (port 3000):**
+**Backend (port 3001):**
 
 ```bash
 cd backend
 npm run start:dev
 ```
 
-**Frontend (port 3001):**
+**Frontend (port 3000):**
 
 ```bash
 cd frontend
 npm run dev
 ```
 
-Open [http://localhost:3001](http://localhost:3001) in your browser.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Usage
 

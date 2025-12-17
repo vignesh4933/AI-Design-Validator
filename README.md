@@ -26,15 +26,15 @@ AI-powered cable design validation tool using Gemini API and IEC standards.
 ### Prerequisites
 
 - Node.js 18+
-- Gemini API key ([Get one here](https://aistudio.google.com/app/apikey))
+- OpenAI API key ([Get one here](https://platform.openai.com/account/api-keys))
 
 ### Installation
 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/POOVARASAN-03/IEC-Design-Validator.git
-cd IEC-Design-Validator
+git clone https://github.com/vignesh4933/AI-Design-Validator.git
+cd AI-Design-Validator
 ```
 
 2. Install dependencies:

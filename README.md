@@ -7,7 +7,7 @@
 
 ---
 
-AI-powered cable design validation tool using OPENAI API and IEC standards.
+AI-powered cable design validation tool using OpenAI API and IEC standards.
 
 ## Features
 

@@ -43,30 +43,15 @@ IEC Design Validator is an AI-powered cable design validation tool that checks c
    git clone https://github.com/vignesh4933/AI-Design-Validator.git
 
 
-Navigate to backend and frontend directories:
-
 cd design-validator-backend
 cd ../design-validator-frontend
 
-
-Install dependencies:
-
 npm install
-
-
-Run backend server:
 
 npm run start:dev
 
-
-Run frontend application:
-
 npm run dev
 
-
-Open the app in your browser and enter cable design specifications to see real-time validation results.
-
-Project Structure
 AI-Design-Validator/
 ├─ backend/           # NestJS API server
 ├─ frontend/          # Next.js 15 React frontend

@@ -43,19 +43,71 @@ IEC Design Validator is an AI-powered cable design validation tool that checks c
    git clone https://github.com/vignesh4933/AI-Design-Validator.git
 
 
-cd design-validator-backend
-cd ../design-validator-frontend
+2. **Install dependencies:**
 
+**Backend**
+cd backend
 npm install
 
+markdown
+Copy code
+
+**Frontend**
+cd ../frontend
+npm install
+
+markdown
+Copy code
+
+3. Create environment file (`backend/.env`) and add:
+GEMINI_API_KEY=your_api_key_here
+
+csharp
+Copy code
+
+## Running the Application
+
+**Backend (default port 3000):**
+cd backend
 npm run start:dev
 
+cpp
+Copy code
+
+**Frontend (default port 3001):**
+cd frontend
 npm run dev
 
-AI-Design-Validator/
-├─ backend/           # NestJS API server
-├─ frontend/          # Next.js 15 React frontend
-├─ services/          # AI validation services
-├─ components/        # Reusable UI components
-├─ README.md          # Project documentation
-└─ package.json       # Project dependencies
+pgsql
+Copy code
+
+Open http://localhost:3001 in your browser.
+
+## Usage
+
+1. Select input type (Free Text or JSON)  
+2. Enter cable design specifications  
+3. Click **Validate Design**  
+4. View validation results and AI reasoning
+
+## Example Input
+
+**Free Text:**
+Cable: 10 sqmm Cu conductor, PVC 1.0mm insulation, 0.6/1 kV
+
+javascript
+Copy code
+
+**JSON:**
+{
+"voltage": "0.6/1 kV",
+"conductor": { "material": "Cu", "size": 10 },
+"insulation": { "material": "PVC", "thickness": 1.0 }
+}
+
+shell
+Copy code
+
+## License
+
+MIT
